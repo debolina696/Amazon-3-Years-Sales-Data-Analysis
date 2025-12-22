@@ -202,4 +202,4 @@ This dashboard page delivers a **professional, executive-level overview** of Ama
 - Dynamic and interactive KPI analysis
 
 This page serves as the **foundation dashboard** for deeper category-wise, region-wise, and product-level analysis in subsequent pages.
-- Dashboard link 
+- Dashboard link https://github.com/debolina696/Amazon-3-Years-Sales-Data-Analysis/blob/main/Amazon%20Sales%20Dashboard.png
