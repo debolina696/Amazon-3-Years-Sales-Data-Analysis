@@ -533,4 +533,148 @@ This dashboard delivers a **professional product and category performance view**
 
 It supports **inventory planning, pricing decisions, and product strategy** for business stakeholders.
 - Dashboard 3 link - https://github.com/debolina696/Amazon-3-Years-Sales-Data-Analysis/blob/main/Category%20Dashboard.png
-- 
+- ## 🌍 Region & City Performance Analysis – Amazon (Dashboard Page 4)
+
+### 📌 Dashboard Objective
+This dashboard provides a **geographical performance analysis** of Amazon sales over a 3-year period.  
+It helps stakeholders evaluate **region-wise and city-wise sales, profit, cost, and targets**, and understand how different locations contribute to overall business performance.
+
+The dashboard supports:
+- Regional performance comparison
+- City-level sales and profitability analysis
+- Target vs actual evaluation by region
+- Strategic geographic decision-making
+
+---
+
+## 🎯 Business Questions Answered
+
+1. How many **regions and cities** are contributing to sales?
+2. What is the **total sales by region and city**?
+3. What is the **total profit and cost** at city level?
+4. How do **regions perform against assigned targets**?
+5. Which **cities are top and bottom performers**?
+6. How is sales distributed geographically?
+7. How do sales and profit vary **city-wise within regions**?
+
+---
+
+## 📊 Key KPIs Displayed
+
+- **Count of Regions**
+- **Count of Cities**
+- **Region-wise Total Target**
+- **Total Sales**
+
+These KPIs provide a quick summary of **geographical scale and performance**.
+
+---
+
+## 🧱 Data Model & Schema (Relevant Tables)
+
+### 🔹 Fact Tables
+- **Sales Fact**
+  - Sales Amount
+  - Profit
+  - Cost
+  - City
+  - Region
+  - Date
+
+- **Region Target Table**
+  - Region Name
+  - Target Amount
+
+### 🔹 Dimension Tables
+- **Date Table** (Year, Month)
+- **Region Table**
+- **City Table**
+
+### 🔹 Relationships
+- Date → Sales (1 : *)
+- Region → Sales (1 : *)
+- City → Sales (1 : *)
+- Region → Target (1 : *)
+
+✔ Star schema  
+✔ Single-direction filters  
+✔ Optimized for geographic aggregation
+
+---
+
+## 📈 Visual (Diagram-wise) Analysis
+
+### 1️⃣ Region & City Performance Matrix (Table)
+Displays:
+- Region
+- City
+- Total Sales
+- Total Profit
+- Total Cost
+
+**Why used:**  
+Provides a **detailed comparative view** of city performance within each region.
+
+**DAX Level:** Intermediate  
+Uses context-based aggregation.
+
+---
+
+### 2️⃣ Total Sales & Total Profit by City (Clustered Bar Chart)
+Compares sales and profit across cities.
+
+**Why used:**  
+Identifies **high-revenue but low-profit** cities and vice versa.
+
+---
+
+### 3️⃣ Total Sales by City (Donut Chart)
+Shows percentage contribution of each city to total sales.
+
+**Why used:**  
+Quick visualization of **city-wise sales distribution**.
+
+---
+
+### 4️⃣ Region-wise Target KPI
+Displays total target assigned across regions.
+
+**Why used:**  
+Helps management evaluate **regional performance expectations**.
+
+---
+
+## 🧮 DAX & Calculation Highlights
+
+- Aggregations using `SUM`
+- Region and city level context filtering
+- Target comparison using `CALCULATE`
+- Reusable base measures for:
+  - Total Sales
+  - Total Profit
+  - Total Cost
+  - Target
+
+---
+
+## 🛠 Data Preparation (Power Query)
+
+- Standardized region and city names
+- Removed duplicate city records
+- Validated city–region mapping
+- Ensured numeric consistency for sales, profit, and cost
+- Cleaned and aligned target data by region
+
+---
+
+## ✅ Summary
+
+This dashboard delivers a **clear and professional geographical performance view** by combining:
+- Region-wise target analysis
+- City-level sales and profit insights
+- Clean data modeling
+- Business-focused visual storytelling
+
+It supports **regional planning, expansion strategy, and location-based performance optimization**.
+- Dashboard 4 link 
+- Datasource kaggle Amazon Sales data 
