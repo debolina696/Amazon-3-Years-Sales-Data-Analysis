@@ -363,4 +363,4 @@ This dashboard provides a **professional, business-ready employee performance vi
 - Influencer-driven insights
 
 It enables management to make **data-driven decisions** related to performance monitoring, goal setting, and employee optimization.
--Dashboard 2 link - 
+-Dashboard 2 link - https://github.com/debolina696/Amazon-3-Years-Sales-Data-Analysis/blob/main/Target%20vs%20Achivement.png
