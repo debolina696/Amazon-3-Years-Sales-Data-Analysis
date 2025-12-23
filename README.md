@@ -364,3 +364,172 @@ This dashboard provides a **professional, business-ready employee performance vi
 
 It enables management to make **data-driven decisions** related to performance monitoring, goal setting, and employee optimization.
 -Dashboard 2 link - https://github.com/debolina696/Amazon-3-Years-Sales-Data-Analysis/blob/main/Target%20vs%20Achivement.png
+## 🛒 Category & Product Performance Analysis – Amazon (Dashboard Page 3)
+
+### 📌 Dashboard Objective
+This dashboard focuses on analyzing **category-wise, subcategory-wise, and product-wise performance** over a 3-year period.  
+The goal is to identify **top-performing categories and products**, analyze **sales, profit, cost, and units sold**, and support **product-level decision-making**.
+
+It enables stakeholders to understand:
+- Which categories and subcategories drive maximum revenue
+- Which products are most profitable
+- How cost and profit vary across products
+- Overall product portfolio performance
+
+---
+
+## 🎯 Business Questions Answered
+
+1. What is the **total sales by category**?
+2. Which **subcategories contribute the most** to sales?
+3. Which **products are top-performing** by sales?
+4. What is the **total cost and profit** at product level?
+5. How many **categories, subcategories, and products** exist?
+6. How many **units are sold** across all products?
+7. How do metrics change dynamically for **Sales / Profit / Cost / Orders**?
+
+---
+
+## 📊 Key KPIs Displayed
+
+- **Category-wise Total Cost**
+- **Total Units Sold**
+- **Count of Categories**
+- **Count of Subcategories**
+- **Count of Products**
+
+A **dynamic metric toggle** allows switching between:
+- Total Sales  
+- Total Profit  
+- Total Cost  
+- Total Orders  
+
+---
+
+## 🧱 Data Model & Schema (Relevant Tables)
+
+### 🔹 Fact Table
+- **Sales Fact**
+  - Sales Amount
+  - Cost
+  - Profit
+  - Units Sold
+  - Product Key
+  - Date Key
+
+### 🔹 Dimension Tables
+- **Product Table** (Product, Subcategory, Category)
+- **Date Table** (Year, Month)
+
+### 🔹 Relationships
+- Product → Sales (1 : *)
+- Date → Sales (1 : *)
+
+✔ Star schema  
+✔ Single-direction filters  
+✔ Optimized for product-level analysis
+
+---
+
+## 📈 Visual (Diagram-wise) Analysis
+
+### 1️⃣ Category-wise Total Sales (Pie Chart)
+Displays sales contribution of each category.
+
+**Why used:**  
+Quick comparison of category dominance in overall revenue.
+
+**DAX Type:** Basic aggregation (`SUM`)
+
+---
+
+### 2️⃣ Subcategory-wise Sales Analysis (Bar Chart)
+Shows sales distribution across subcategories.
+
+**Why used:**  
+Identifies strong and weak subcategories within each category.
+
+---
+
+### 3️⃣ Product-wise Sales Performance (Bar Chart)
+Ranks products based on total sales.
+
+**Why used:**  
+Helps identify **top-selling products**.
+
+---
+
+### 4️⃣ Product Sales, Profit & Cost Details (Table)
+Displays:
+- Product Name
+- Category
+- Subcategory
+- Total Sales
+- Total Profit
+- Total Cost
+
+**Why used:**  
+Provides **granular product-level insights** for business users.
+
+**DAX Level:** Intermediate  
+Uses multiple measures with shared filter context.
+
+---
+
+### 5️⃣ Dynamic Metric Toggle (Advanced Feature)
+Users can switch visuals between:
+- Sales
+- Profit
+- Cost
+- Orders
+
+**Why used:**  
+Reduces report duplication and improves interactivity.
+
+**DAX Level:** Advanced  
+- Disconnected table
+- `SWITCH()` logic
+- Dynamic measure evaluation
+
+---
+
+### 6️⃣ Units Sold KPI
+Displays total units sold across all products.
+
+**Why used:**  
+Helps understand **volume-driven performance** separate from revenue.
+
+---
+
+## 🧮 DAX & Calculation Highlights
+
+- Aggregations using `SUM`
+- Dynamic KPI switching using `SWITCH`
+- Context-aware calculations by:
+  - Category
+  - Subcategory
+  - Product
+- Reusable base measures for Sales, Profit, Cost, Units
+
+---
+
+## 🛠 Data Preparation (Power Query)
+
+- Cleaned product names and categories
+- Standardized category & subcategory values
+- Removed duplicates
+- Ensured numeric consistency for cost and sales
+- Validated product-category hierarchy
+
+---
+
+## ✅ Summary
+
+This dashboard delivers a **professional product and category performance view** by combining:
+- Category & subcategory contribution analysis
+- Product-level profitability insights
+- Dynamic KPI selection
+- Clean data modeling and DAX logic
+
+It supports **inventory planning, pricing decisions, and product strategy** for business stakeholders.
+- Dashboard 3 link - 
