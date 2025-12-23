@@ -532,4 +532,5 @@ This dashboard delivers a **professional product and category performance view**
 - Clean data modeling and DAX logic
 
 It supports **inventory planning, pricing decisions, and product strategy** for business stakeholders.
-- Dashboard 3 link - 
+- Dashboard 3 link - https://github.com/debolina696/Amazon-3-Years-Sales-Data-Analysis/blob/main/Category%20Dashboard.png
+- 
