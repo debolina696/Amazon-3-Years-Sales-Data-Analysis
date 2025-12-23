@@ -676,5 +676,5 @@ This dashboard delivers a **clear and professional geographical performance view
 - Business-focused visual storytelling
 
 It supports **regional planning, expansion strategy, and location-based performance optimization**.
-- Dashboard 4 link 
-- Datasource kaggle Amazon Sales data 
+- Dashboard 4 link https://github.com/debolina696/Amazon-3-Years-Sales-Data-Analysis/blob/main/Region%20Wise%20Dashboard.png
+- Datasource kaggle Amazon Sales data "C:\Users\Debolina\OneDrive\Desktop\Git Hub\amazon_like_sales_3yr.xlsx"
